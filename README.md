@@ -88,3 +88,7 @@ kubectl logs kuard                    : 실행중인 컨테이너의 로그를 �
 kubectl exec xxx                      : xxx 포드 내 컨테이너에서 직접 실행을 함.
 
 kubectl exec -it xxx -- /bin/bash     : xxx 포드 내 bash를 통해 대화형 세션을 함.
+
+kubectl cp xxxx:/path/2ndPath/file.extension ./file2.extension		:	 xxxx포드내의 컨테이너 /path/2ndPath/경로 내의 file.extension 파일을 로컬머신에 file2.extenstion으로 복사
+
+kubectl cp $HOME/config.txt xxxx:/config.txt 	:	$HOME/config.txt파일을 xxxx포드내의 /config.txt 의 이름으로 복사
